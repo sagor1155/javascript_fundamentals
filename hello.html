@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>mywebpage</title>
+
+        <script language = "javascript" type = "text/javascript">
+            var myVar = "global";
+            function sayHello(){
+                var myVar = "local";
+                // alert("Hello world");
+                document.write(myVar);
+                document.write("<br>");
+
+                var aProperty;
+                document.write("Navigator Object Properties<br /> ");        
+                for (aProperty in navigator) {
+                    document.write(aProperty);
+                    document.write("<br />");
+                }
+                document.write ("Exiting from the loop!");                
+            }
+        </script>
+
+    </head>
+
+    <body>
+        <input type="button" name="hellobutton" id="hellobutton" onclick="sayHello()" value="say hello">
+    </body>
+
+</html>
