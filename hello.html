@@ -62,6 +62,24 @@
                 window.location = "https://www.tutorialspoint.com";
             }
 
+            function openDialogBox(){
+                // alert dialog box 
+                // alert("this is a warning msg");
+
+                //confirmation dialog box
+                let retValue = confirm("Do you want to continue?");
+                if(retValue){
+                    document.write("user wants to continue");
+                }else{
+                    document.write("user doesn't want to continue!");
+                }
+                return retValue;
+
+                //prompt dialog box 
+                // var retVal = prompt("Enter your name");
+                // document.write("You have entered : " + retVal);
+            }
+
         </script>
 
     </head>
@@ -81,6 +99,12 @@
 
             <p>Click the following button, you will be redirected to home page.</p>
             <input type="button" value="Redirect" onclick="pageRedirect()">
+
+            <input type="button" value="dialog box" onclick="openDialogBox()"> <br>
+
+            <a href="javascript:void(alert('warning!!!'))">Click me!</a> <br> <br>
+            <input type="button" value="print this" onclick="window.print()">
+
         </form>
 
 
