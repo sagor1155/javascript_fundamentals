@@ -1,0 +1,63 @@
+form{
+    background-color: black;
+    height: 240px;
+    width: 480px;
+}
+
+.identity{
+    background-color: black;
+    color: rgb(127, 255, 180);
+    padding: 5px;
+    margin: 5px;
+    border-spacing: 20px;
+}
+
+#jobstatus {
+    background-color: black;
+    color: rgb(127, 255, 180);
+    padding: 5px;
+    margin: 5px;
+    border-spacing: 20px;
+}
+
+.dist{
+    float: right;
+    margin-right: 5px;
+}
+
+.sts{
+    float: left;
+    width: 50%;
+}
+
+#district{
+    width: 160px;
+}
+
+.description{
+    margin-left: 5px;
+}
+
+#resetButton{
+    float: right;
+}
+
+#submitButton {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    float: right;
+}
+
+table, th, tr{
+    margin: 5px;
+    padding: 5px;
+    border-collapse: collapse;
+}
+
+th, tr, td{
+    border: 1px solid purple;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: fit-content;
+}
+

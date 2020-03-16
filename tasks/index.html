@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>employeepage</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+        <script src="frontend.js"></script>
+    </head>
+
+    <body>
+        <form action="#" onsubmit = "return(validateForm(this));" name="form_name" id="form_id" class="form_class">
+            <div class="identity">
+                <label for="employeeid">ID</label>
+                <input type="number" name="employeeid" id="employeeid" placeholder="your id">
+                <label for="employeename">Employee Name</label>
+                <input type="text" name="employeename" id="employeename" placeholder="your name">
+            </div>
+
+            <div id="jobstatus" class="wrap">
+                
+                <div class="jobinfo">
+                    <div class="dist">
+                        <label for="district">District</label>
+                        <select type="text" id="district" name="district"> 
+                            <option>Kurigram</option> 
+                            <option>Rangpur</option> 
+                            <option>Bogra</option> 
+                            <option>Dhaka</option>  
+                        </select>
+                    </div>
+
+                    <div class="sts">
+                        <p>Status</p>
+                        <input type="radio" id="permanent" name="status" value="permanent">
+                        <label for="status">Permanent</label> <br>
+                        <input type="radio" id="temporary" name="status" value="temporary">
+                        <label for="status">Temporary</label>  
+                    </div>
+                </div>
+
+                <br><br><br><br><br><br>
+
+                <div class="description">
+                    <label for="jd" style="margin-right: 10px;">JD</label>
+                    <input type="checkbox" name="jd" id="UX" value="UX">
+                    <label for="jd">UX</label>
+                    <input type="checkbox" name="jd" id="DEV" value="DEV">
+                    <label for="jd">DEV</label>
+                    <input type="checkbox" name="jd" id="DB" value="DB">
+                    <label for="jd">DB</label>
+                </div>
+                
+                <br><br>
+                
+                <input type="reset"  value="Reset"  id="resetButton">
+                <input type="submit" value="submit" id="submitButton">
+            
+            </div>
+        </form>
+
+        <br><br><br><br>
+
+        <p style="margin: 5px;">EMPLOYEE INFORMATION</p>
+        <table id="table01">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Status</th>
+            </tr>
+        </table>
+    </body>
+</html>
