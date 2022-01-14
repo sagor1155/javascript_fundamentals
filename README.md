@@ -1,2 +1,7 @@
-# javascript_practice
-practicing javascript basics 
+# javascript_fundamentals
+### data type
+### conversion
+### operator
+### function
+### loop
+### OOP
