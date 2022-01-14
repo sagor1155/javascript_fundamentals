@@ -8,10 +8,19 @@ function getNames() {
     return { firstName, lastName } // object 
 }
 
-person = getNames()
-console.log(person.firstName)
-console.log(person.lastName)
+let p = getNames()
+console.log(p.firstName)
+console.log(p.lastName)
 
 // or, 
 let { firstN, lastN } = getNames();
 
+// constructor function 
+// a constructor function is used to create objects
+function Person () {
+    this.name = 'John',
+    this.age = 23
+}
+
+// create an object
+const person = new Person();
