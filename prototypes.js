@@ -63,8 +63,10 @@ console.log(person1.name) // John
 // adding property 
 Person.prototype.name = 'Peter'
 console.log(person1.name) // John
-
 // You can also access the prototype property of a constructor function from an object.
+person1.__proto__.abc  = 12
+console.log(Person.prototype)
 console.log(person1.__proto__)
+console.log(person2.__proto__)
 // In the above example, a person object is used to access the prototype property using __proto__. 
 // However, __proto__ has been deprecated and you should avoid using it.
