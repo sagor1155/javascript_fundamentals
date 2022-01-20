@@ -48,3 +48,7 @@ catch(error) {
     console.log('An error caught'); 
     console.log('Error message: ' + error);  
 }
+
+// Note: You can also use other built-in error constructors for 
+// standard errors: TypeError, SyntaxError, ReferenceError, EvalError, InternalError, and RangeError
+throw new ReferenceError('this is reference error');
