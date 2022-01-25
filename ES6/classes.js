@@ -36,3 +36,32 @@ console.log(user1.name)
 console.log(user1.username)
 
 // Inheritance
+// parent class
+class Person { 
+    constructor(name) {
+        this.name = name;
+        this.occupation = "unemployed";
+    }
+    greet() {
+        console.log(`Hello ${this.name}`);
+    }
+}
+
+// inheriting parent class
+class Student extends Person {
+    constructor(name){
+        super(name)
+
+        // Overriding an occupation property
+        this.occupation = 'Student';
+    }
+
+    // overriding methods
+    greet(){
+        console.log(`Hello student ${this.name}.`);
+        console.log('occupation: ' + this.occupation);
+    }
+}
+
+let student = new Student("dsagor")
+student.greet()
