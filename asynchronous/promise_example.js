@@ -38,3 +38,15 @@ getTodos('todos/todos_lucy.json').then(data => {
 }).then(data => {
     console.log(data)
 }).catch(err => console.log(err)).finally(()=>console.log('Promise done'))
+
+
+// fetch 
+fetch('todos/todos_lucy.json').then((response) => {
+    console.log('resolved:', response)
+    // const data = response.json() // returns promise 
+    return response.json() // returns promise
+}).then(data => {
+    console.log(data)
+}).catch((err) => {
+    console.log('rejected:', err) // when there's network or, can't connect to server
+})
